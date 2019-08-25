@@ -1,0 +1,627 @@
+{% load static %}
+{% load staticfiles %}
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Aroma Shop - Home</title>
+	<link rel="icon" href="{% static 'img/Fevicon.png' %}" type="image/png" >
+  <link rel="stylesheet" href="{% static 'vendors/bootstrap/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'vendors/fontawesome/css/all.min.css' %}">
+	<link rel="stylesheet" href="{% static 'vendors/themify-icons/themify-icons.css' %}">
+  <link rel="stylesheet" href="{% static 'vendors/nice-select/nice-select.css' %}">
+  <link rel="stylesheet" href="{% static 'vendors/owl-carousel/owl.theme.default.min.css' %}">
+  <link rel="stylesheet" href="{% static 'vendors/owl-carousel/owl.carousel.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'css/chat.css' %}">
+</head>
+<body>
+  <!--================ Start Header Menu Area =================-->
+	<header class="header_area">
+    <div class="main_menu">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a class="navbar-brand logo_h" href="index.html"><img src="{% static 'img/logo.png' %}" alt="" height="110" width="110"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+            <ul class="nav navbar-nav menu_nav ml-auto mr-auto">
+              <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item submenu dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                  aria-expanded="false">Shop</a>
+                <ul class="dropdown-menu">
+                  <li class="nav-item"><a class="nav-link" href="category.html">Shop Category</a></li>
+                  <li class="nav-item"><a class="nav-link" href="single-product.html">Product Details</a></li>
+                  <li class="nav-item"><a class="nav-link" href="checkout.html">Product Checkout</a></li>
+                  <li class="nav-item"><a class="nav-link" href="confirmation.html">Confirmation</a></li>
+                  <li class="nav-item"><a class="nav-link" href="cart.html">Shopping Cart</a></li>
+                </ul>
+							</li>
+              <li class="nav-item submenu dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                  aria-expanded="false">Blog</a>
+                <ul class="dropdown-menu">
+                  <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                  <li class="nav-item"><a class="nav-link" href="single-blog.html">Blog Details</a></li>
+                </ul>
+							</li>
+							<li class="nav-item submenu dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                  aria-expanded="false">Pages</a>
+                <ul class="dropdown-menu">
+                  <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                  <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
+                  <li class="nav-item"><a class="nav-link" href="tracking-order.html">Tracking</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+
+            <ul class="nav-shop">
+              <li class="nav-item"><button><i class="ti-search"></i></button></li>
+              <li class="nav-item"><button><i class="ti-shopping-cart"></i><span class="nav-shop__circle">3</span></button> </li>
+              <li class="nav-item"><a class="button button-header" href="#">Buy Now</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+	<!--================ End Header Menu Area =================-->
+
+  <main class="site-main">
+    
+    <!--================ Hero banner start =================-->
+    <section class="hero-banner">
+      <div class="container">
+        <div class="row no-gutters align-items-center pt-60px">
+          <div class="col-5 d-none d-sm-block">
+            <div class="hero-banner__img">
+              <img class="img-fluid" src="{% static 'img/home/moto.png' %}" alt="">
+            </div>
+          </div>
+          <div class="col-sm-7 col-lg-6 offset-lg-1 pl-4 pl-md-5 pl-lg-0">
+            <div class="hero-banner__content">
+              <h1>ITALIKA</h1>
+              <h4>El motor de tu vida</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--================ Hero banner start =================-->
+
+    <!--================ Hero Carousel start =================-->
+    <section class="section-margin mt-0">
+      <div class="owl-carousel owl-theme hero-carousel">
+        <div class="hero-carousel__slide">
+          <img src="{% static 'img/home/modelos.png' %}" alt="" class="img-fluid" height="200" width="200">
+          <a href="#" class="hero-carousel__slideOverlay">
+            <h3>Modelos</h3>
+          </a>
+        </div>
+        <div class="hero-carousel__slide">
+          <img src="{% static 'img/home/refacciones.png' %}" alt="" class="img-fluid" height="200" width="200">
+          <a href="#" class="hero-carousel__slideOverlay">
+            <h3>Refacciones</h3>
+            </a>
+        </div>
+        <div class="hero-carousel__slide">
+          <img src="{% static 'img/home/distribuidores.png' %}" alt="" class="img-fluid" height="200" width="200">
+          <a href="#" class="hero-carousel__slideOverlay">
+            <h3>Distribuidores</h3>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!--================ Hero Carousel end =================-->
+
+    <!-- ================ trending product section start ================= -->  
+    <section class="section-margin calc-60px">
+      <div class="container">
+        <div class="section-intro pb-60px">
+          <h2>Nuestros <span class="section-intro__style">Modelos</span></h2>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="card text-center card-product">
+              <div class="card-product__img">
+                <img class="card-img" src="{% static 'img/product/modelo1.png' %}" alt="" height="240" width="50">
+                <ul class="card-product__imgOverlay">
+                  <li><button><i class="ti-search"></i></button></li>
+                  <li><button><i class="ti-shopping-cart"></i></button></li>
+                  <li><button><i class="ti-heart"></i></button></li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <p>Tu compañera ideal para largas jornadas; cómoda, resistente y con alto rendimiento de combustible.</p>
+                <h4 class="card-product__title"><a href="single-product.html">FT 250 TS</a></h4>
+                <p class="card-product__price">$30,999.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="card text-center card-product">
+              <div class="card-product__img">
+                <img class="card-img" src="{% static 'img/product/modelo2.png' %}" alt="">
+                <ul class="card-product__imgOverlay">
+                  <li><button><i class="ti-search"></i></button></li>
+                  <li><button><i class="ti-shopping-cart"></i></button></li>
+                  <li><button><i class="ti-heart"></i></button></li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <p>Práctica, divertida y fácil de manejar</p>
+                <h4 class="card-product__title"><a href="single-product.html">WS175SPORT</a></h4>
+                <p class="card-product__price">$24,999.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="card text-center card-product">
+              <div class="card-product__img">
+                <img class="card-img" src="{% static 'img/product/modelo3.png' %}" alt="">
+                <ul class="card-product__imgOverlay">
+                  <li><button><i class="ti-search"></i></button></li>
+                  <li><button><i class="ti-shopping-cart"></i></button></li>
+                  <li><button><i class="ti-heart"></i></button></li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <p>En cada latido vives tu pasión, eliges tu camino, eres dueño de tu tiempo, eres creador de tu estilo, eres Piloto Z</p>
+                <h4 class="card-product__title"><a href="single-product.html">250ZI</a></h4>
+                <p class="card-product__price">$42,999.30</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="card text-center card-product">
+              <div class="card-product__img">
+                <img class="card-img" src="{% static 'img/product/modelo4.png' %}" alt="">
+                <ul class="card-product__imgOverlay">
+                  <li><button><i class="ti-search"></i></button></li>
+                  <li><button><i class="ti-shopping-cart"></i></button></li>
+                  <li><button><i class="ti-heart"></i></button></li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <p>Alimenta tu espíritu deportivo y consolida tu estilo</p>
+                <h4 class="card-product__title"><a href="single-product.html">RT 250</a></h4>
+                <p class="card-product__price">$48,509.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="card text-center card-product">
+              <div class="card-product__img">
+                <img class="card-img" src="{% static 'img/product/modelo5.png' %}" alt="">
+                <ul class="card-product__imgOverlay">
+                  <li><button><i class="ti-search"></i></button></li>
+                  <li><button><i class="ti-shopping-cart"></i></button></li>
+                  <li><button><i class="ti-heart"></i></button></li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <p>Con una DM tú defines el camino.</p>
+                <h4 class="card-product__title"><a href="single-product.html">DM200</a></h4>
+                <p class="card-product__price">$28,499.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="card text-center card-product">
+              <div class="card-product__img">
+                <img class="card-img" src="{% static 'img/product/modelo6.png' %}" alt="">
+                <ul class="card-product__imgOverlay">
+                  <li><button><i class="ti-search"></i></button></li>
+                  <li><button><i class="ti-shopping-cart"></i></button></li>
+                  <li><button><i class="ti-heart"></i></button></li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <p>La emoción de rodar también se vive en cuatro ruedas. Vence cualquier camino y diviértete sin importar el terreno.</p>
+                <h4 class="card-product__title"><a href="single-product.html">ATV250</a></h4>
+                <p class="card-product__price">$63,919.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="card text-center card-product">
+              <div class="card-product__img">
+                <img class="card-img" src="{% static 'img/product/modelo7.png' %}" alt="">
+                <ul class="card-product__imgOverlay">
+                  <li><button><i class="ti-search"></i></button></li>
+                  <li><button><i class="ti-shopping-cart"></i></button></li>
+                  <li><button><i class="ti-heart"></i></button></li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <p>El estilo clásico de una moto tipo crucero. Simplemente te harás notar en el camino.</p>
+                <h4 class="card-product__title"><a href="single-product.html">RC200</a></h4>
+                <p class="card-product__price">$26,498.70</p>
+              </div> 
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="card text-center card-product">
+              <div class="card-product__img">
+                <img class="card-img" src="{% static 'img/product/modelo8.png' %}" alt="">
+                <ul class="card-product__imgOverlay">
+                  <li><button><i class="ti-search"></i></button></li>
+                  <li><button><i class="ti-shopping-cart"></i></button></li>
+                  <li><button><i class="ti-heart"></i></button></li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <p>Elige tu aventura y traza tu ruta. VX Adventure ofrece todo lo que necesitas para explorar y descubrir nuevos caminos sin importar las fronteras.</p>
+                <h4 class="card-product__title"><a href="#">VX250 EFI</a></h4>
+                <p class="card-product__price">$69,999.01</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================ trending product section end ================= -->  
+
+<!-- ================ Subscribe section start ================= --> 
+    <section class="subscribe-position">
+      <div class="container">
+            <div class="chat">
+                <div class="chat-container">
+                  <div class="message">
+                    <img class="avatar" src="https://placeimg.com/50/50/people?1">
+                    <div id="time-date" class="datetime">{% now "jS F Y H:i" %}</div>
+                    <p>Te gustaría realizar una compra, salúdame :D</p>
+                  </div>
+                  
+                </div>
+                <form class="send-message-form">
+                  <input type="text" placeholder="Your message">
+                  <button type="submit">Send</button>
+                </form>
+              
+              
+        </div>
+      </div>
+    </section>
+    <!-- ================ Subscribe section end ================= --> 
+
+    <!-- ================ offer section start ================= --> 
+    <section class="images">
+      <div class="container">
+        <div class="row">
+            <img src="{% static 'img/bbva.png' %}" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================ offer section end ================= --> 
+
+    <!-- ================ Best Selling item  carousel ================= --> 
+    <section class="section-margin calc-60px">
+      <div class="container">
+        <div class="section-intro pb-60px">
+          <p>Popular en el mercado</p>
+          <h2>Productos <span class="section-intro__style">Destacados</span></h2>
+        </div>
+        <div class="owl-carousel owl-theme" id="bestSellerCarousel">
+          <div class="card text-center card-product">
+            <div class="card-product__img">
+              <img class="img-fluid" src="{% static 'img/product/modelo2.png' %}" alt="">
+              <ul class="card-product__imgOverlay">
+                <li><button><i class="ti-search"></i></button></li>
+                <li><button><i class="ti-shopping-cart"></i></button></li>
+                <li><button><i class="ti-heart"></i></button></li>
+              </ul>
+            </div>
+            <div class="card-body">
+              <p>Práctica, divertida y fácil de manejar</p>
+              <h4 class="card-product__title"><a href="single-product.html">WS175SPORT</a></h4>
+              <p class="card-product__price">$24,999.00</p>
+            </div>
+          </div>
+
+          <div class="card text-center card-product">
+            <div class="card-product__img">
+              <img class="img-fluid" src="{% static 'img/product/modelo4.png' %}" alt="">
+              <ul class="card-product__imgOverlay">
+                <li><button><i class="ti-search"></i></button></li>
+                <li><button><i class="ti-shopping-cart"></i></button></li>
+                <li><button><i class="ti-heart"></i></button></li>
+              </ul>
+            </div>
+            <div class="card-body">
+              <p>Alimenta tu espíritu deportivo y consolida tu estilo</p>
+              <h4 class="card-product__title"><a href="single-product.html">RT 250</a></h4>
+              <p class="card-product__price">$48,509.00</p>
+            </div>
+          </div>
+
+          <div class="card text-center card-product">
+            <div class="card-product__img">
+              <img class="img-fluid" src="{% static 'img/product/modelo6.png' %}" alt="">
+              <ul class="card-product__imgOverlay">
+                <li><button><i class="ti-search"></i></button></li>
+                <li><button><i class="ti-shopping-cart"></i></button></li>
+                <li><button><i class="ti-heart"></i></button></li>
+              </ul>
+            </div>
+            <div class="card-body">
+              <p>La emoción de rodar también se vive en cuatro ruedas. Vence cualquier camino y diviértete sin importar el terreno.</p>
+              <h4 class="card-product__title"><a href="single-product.html">ATV250</a></h4>
+              <p class="card-product__price">$63,919.00</p>
+            </div>
+          </div>
+
+          <div class="card text-center card-product">
+            <div class="card-product__img">
+              <img class="img-fluid" src="{% static 'img/product/modelo7.png' %}" alt="">
+              <ul class="card-product__imgOverlay">
+                <li><button><i class="ti-search"></i></button></li>
+                <li><button><i class="ti-shopping-cart"></i></button></li>
+                <li><button><i class="ti-heart"></i></button></li>
+              </ul>
+            </div>
+            <div class="card-body">
+              <p>Elige tu aventura y traza tu ruta. VX Adventure ofrece todo lo que necesitas para explorar y descubrir nuevos caminos sin importar las fronteras.</p>
+              <h4 class="card-product__title"><a href="#">VX250 EFI</a></h4>
+              <p class="card-product__price">$69,999.01</p>
+            </div>
+          </div>
+
+          <div class="card text-center card-product">
+            <div class="card-product__img">
+              <img class="img-fluid" src="{% static 'img/product/product1.png' %}" alt="">
+              <ul class="card-product__imgOverlay">
+                <li><button><i class="ti-search"></i></button></li>
+                <li><button><i class="ti-shopping-cart"></i></button></li>
+                <li><button><i class="ti-heart"></i></button></li>
+              </ul>
+            </div>
+            <div class="card-body">
+              <p>Accessories</p>
+              <h4 class="card-product__title"><a href="single-product.html">Quartz Belt Watch</a></h4>
+              <p class="card-product__price">$150.00</p>
+            </div>
+          </div>
+
+          <div class="card text-center card-product">
+            <div class="card-product__img">
+              <img class="img-fluid" src="{% static 'img/product/product2.png' %}" alt="">
+              <ul class="card-product__imgOverlay">
+                <li><button><i class="ti-search"></i></button></li>
+                <li><button><i class="ti-shopping-cart"></i></button></li>
+                <li><button><i class="ti-heart"></i></button></li>
+              </ul>
+            </div>
+            <div class="card-body">
+              <p>Beauty</p>
+              <h4 class="card-product__title"><a href="single-product.html">Women Freshwash</a></h4>
+              <p class="card-product__price">$150.00</p>
+            </div>
+          </div>
+
+          <div class="card text-center card-product">
+            <div class="card-product__img">
+              <img class="img-fluid" src="{% static 'img/product/product3.png' %}" alt="">
+              <ul class="card-product__imgOverlay">
+                <li><button><i class="ti-search"></i></button></li>
+                <li><button><i class="ti-shopping-cart"></i></button></li>
+                <li><button><i class="ti-heart"></i></button></li>
+              </ul>
+            </div>
+            <div class="card-body">
+              <p>Decor</p>
+              <h4 class="card-product__title"><a href="single-product.html">Room Flash Light</a></h4>
+              <p class="card-product__price">$150.00</p>
+            </div>
+          </div>
+
+          <div class="card text-center card-product">
+            <div class="card-product__img">
+              <img class="img-fluid" src="{% static 'img/product/product4.png' %}" alt="">
+              <ul class="card-product__imgOverlay">
+                <li><button><i class="ti-search"></i></button></li>
+                <li><button><i class="ti-shopping-cart"></i></button></li>
+                <li><button><i class="ti-heart"></i></button></li>
+              </ul>
+            </div>
+            <div class="card-body">
+              <p>Decor</p>
+              <h4 class="card-product__title"><a href="single-product.html">Room Flash Light</a></h4>
+              <p class="card-product__price">$150.00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================ Best Selling item  carousel end ================= --> 
+
+    <!-- ================ Blog section start ================= -->  
+    <section class="blog">
+      <div class="container">
+        <div class="section-intro pb-60px">
+          <p>Popular Item in the market</p>
+          <h2>Latest <span class="section-intro__style">News</span></h2>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+            <div class="card card-blog">
+              <div class="card-blog__img">
+                <img class="card-img rounded-0" src="{% static 'img/Anuncios/Anuncio1.jpg'%}" alt="">
+              </div>
+              <div class="card-body">
+                <ul class="card-blog__info">
+                  <li><a href="#">By Admin</a></li>
+                  <li><a href="#"><i class="ti-comments-smiley"></i> 2 Comments</a></li>
+                </ul>
+                <h4 class="card-blog__title"><a href="single-blog.html">Conviertete en asociosiado</a></h4>
+                <p>Descubre la form de ser uno de nuestros socios ponindo una concesonaria </p>
+                <a class="card-blog__link" href="#">Read More <i class="ti-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+            <div class="card card-blog">
+              <div class="card-blog__img">
+                <img class="card-img rounded-0" src="{% static 'img/Anuncios/Anuncio2.jpg'%}" alt="">
+              </div>
+              <div class="card-body">
+                <ul class="card-blog__info">
+                  <li><a href="#">By Admin</a></li>
+                  <li><a href="#"><i class="ti-comments-smiley"></i> 2 Comments</a></li>
+                </ul>
+                <h4 class="card-blog__title"><a href="single-blog.html">Lo mas hot de las motocicletas</a></h4>
+                <p>Concoce nuestro mas reciente modelo</p>
+                <a class="card-blog__link" href="#">Read More <i class="ti-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+            <div class="card card-blog">
+              <div class="card-blog__img">
+                <img class="card-img rounded-0" src="{% static 'img/Anuncios/Anuncio3.jpg'%}" alt="">
+              </div>
+              <div class="card-body">
+                <ul class="card-blog__info">
+                  <li><a href="#">By Admin</a></li>
+                  <li><a href="#"><i class="ti-comments-smiley"></i> 2 Comments</a></li>
+                </ul>
+                <h4 class="card-blog__title"><a href="single-blog.html">Professional design staff and efficient equipment you’ll find we offer</a></h4>
+                <p>Let one fifth i bring fly to divided face for bearing divide unto seed. Winged divided light Forth.</p>
+                <a class="card-blog__link" href="#">Read More <i class="ti-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================ Blog section end ================= -->  
+    
+
+  </main>
+
+
+  <!--================ Start footer Area  =================-->	
+	<footer class="footer">
+		<div class="footer-area">
+			<div class="container">
+				<div class="row section_gap">
+					<div class="col-lg-3 col-md-6 col-sm-6">
+						<div class="single-footer-widget tp_widgets">
+							<h4 class="footer_title large_title">Our Mission</h4>
+							<p>
+								So seed seed green that winged cattle in. Gathering thing made fly you're no 
+								divided deep moved us lan Gathering thing us land years living.
+							</p>
+							<p>
+								So seed seed green that winged cattle in. Gathering thing made fly you're no divided deep moved 
+							</p>
+						</div>
+					</div>
+					<div class="offset-lg-1 col-lg-2 col-md-6 col-sm-6">
+						<div class="single-footer-widget tp_widgets">
+							<h4 class="footer_title">Quick Links</h4>
+							<ul class="list">
+								<li><a href="#">Home</a></li>
+								<li><a href="#">Shop</a></li>
+								<li><a href="#">Blog</a></li>
+								<li><a href="#">Product</a></li>
+								<li><a href="#">Brand</a></li>
+								<li><a href="#">Contact</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-6 col-sm-6">
+						<div class="single-footer-widget instafeed">
+							<h4 class="footer_title">Gallery</h4>
+							<ul class="list instafeed d-flex flex-wrap">
+								<li><img src="{% static 'img/gallery/r1.jpg'%}" alt=""></li>
+								<li><img src="{% static 'img/gallery/r2.jpg'%}" alt=""></li>
+								<li><img src="{% static 'img/gallery/r3.jpg'%}" alt=""></li>
+								<li><img src="{% static 'img/gallery/r5.jpg'%}" alt=""></li>
+								<li><img src="{% static 'img/gallery/r7.jpg'%}" alt=""></li>
+								<li><img src="{% static 'img/gallery/r8.jpg'%}" alt=""></li>
+							</ul>
+						</div>
+					</div>
+					<div class="offset-lg-1 col-lg-3 col-md-6 col-sm-6">
+						<div class="single-footer-widget tp_widgets">
+							<h4 class="footer_title">Contact Us</h4>
+							<div class="ml-40">
+								<p class="sm-head">
+									<span class="fa fa-location-arrow"></span>
+									Head Office
+								</p>
+								<p>123, Main Street, Your City</p>
+	
+								<p class="sm-head">
+									<span class="fa fa-phone"></span>
+									Phone Number
+								</p>
+								<p>
+									+123 456 7890 <br>
+									+123 456 7890
+								</p>
+	
+								<p class="sm-head">
+									<span class="fa fa-envelope"></span>
+									Email
+								</p>
+								<p>
+									free@infoexample.com <br>
+									www.infoexample.com
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row d-flex">
+					<p class="col-lg-12 footer-text text-center">
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!--================ End footer Area  =================-->
+
+
+
+  <script src="{% static 'vendors/jquery/jquery-3.2.1.min.js' %}"></script>
+  <script src="{% static 'vendors/bootstrap/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'vendors/skrollr.min.js' %}"></script>
+  <script src="{% static 'vendors/owl-carousel/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'vendors/nice-select/jquery.nice-select.min.js' %}"></script>
+  <script src="{% static 'vendors/jquery.ajaxchimp.min.js' %}"></script>
+  <script src="{% static 'vendors/mail-script.js' %}"></script>
+  <script src="{% static 'js/main.js' %}"></script>
+  <script>
+    function respuesta(arg){
+      var message = $('.message').first().clone();
+      message.find('#time-date').text("{% now 'jS F Y H:i' %}")
+      event.preventDefault();
+      message.find('p').text(arg);  //($('input').val()
+      message.prependTo('.chat-container');
+    }
+  </script>
+</body>
+</html>
