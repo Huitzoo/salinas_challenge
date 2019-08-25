@@ -8,12 +8,12 @@ urlpatterns = [
         name='messenger',
     ),
     path(
-        'dialog',
+        '/dialog',
         view= views.Dialog.as_view(),
         name='dialog',
     ),
     path(
-        'web',
+        '/web',
         view= views.Web.as_view(),
         name='web-bot',
     ),
