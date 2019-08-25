@@ -278,54 +278,10 @@
                 <div class="chat-container">
                   <div class="message">
                     <img class="avatar" src="https://placeimg.com/50/50/people?1">
-                    <div class="datetime">23/03/2016 20:40</div>
-                    <p>A message text</p>
+                    <div id="time-date" class="datetime">{% now "jS F Y H:i" %}</div>
+                    <p>Te gustaría realizar una compra, salúdame :D</p>
                   </div>
-                  <div class="message">
-                    <img class="avatar" src="https://placeimg.com/50/50/people?2">
-                    <div class="datetime">23/03/2016 20:40</div>
-                    <p>A message text</p>
-                  </div>
-                  <div class="message">
-                    <img class="avatar" src="https://placeimg.com/50/50/people?1">
-                    <div class="datetime">23/03/2016 20:40</div>
-                    <p>A message text</p>
-                  </div>
-                  <div class="message">
-                    <img class="avatar" src="https://placeimg.com/50/50/people?2">
-                    <div class="datetime">23/03/2016 20:40</div>
-                    <p>A message text</p>
-                  </div>
-                  <div class="message">
-                    <img class="avatar" src="https://placeimg.com/50/50/people?1">
-                    <div class="datetime">23/03/2016 20:40</div>
-                    <p>A message text</p>
-                  </div>
-                  <div class="message">
-                    <img class="avatar" src="https://placeimg.com/50/50/people?2">
-                    <div class="datetime">23/03/2016 20:40</div>
-                    <p>A message text</p>
-                  </div>
-                  <div class="message">
-                    <img class="avatar" src="https://placeimg.com/50/50/people?1">
-                    <div class="datetime">23/03/2016 20:40</div>
-                    <p>A message text</p>
-                  </div>
-                  <div class="message">
-                    <img class="avatar" src="https://placeimg.com/50/50/people?2">
-                    <div class="datetime">23/03/2016 20:40</div>
-                    <p>A message text</p>
-                  </div>
-                  <div class="message">
-                    <img class="avatar" src="https://placeimg.com/50/50/people?1">
-                    <div class="datetime">23/03/2016 20:40</div>
-                    <p>A message text</p>
-                  </div>
-                  <div class="message">
-                    <img class="avatar" src="https://placeimg.com/50/50/people?2">
-                    <div class="datetime">23/03/2016 20:40</div>
-                    <p>A message text</p>
-                  </div>
+                  
                 </div>
                 <form class="send-message-form">
                   <input type="text" placeholder="Your message">
@@ -660,6 +616,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
   <script src="{% static 'js/main.js' %}"></script>
   <script>
     function respuesta(arg){
+      var message = $('.message').first().clone();
+      message.find('#time-date').text("{% now 'jS F Y H:i' %}")
       event.preventDefault();
       message.find('p').text(arg);  //($('input').val()
       message.prependTo('.chat-container');

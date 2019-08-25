@@ -4,16 +4,19 @@ $(function () {
     var message = $('.message').first().clone();
     message.find('p').text(($('input').val()));
     message.prependTo('.chat-container');
-    $('input').val('');
+    var data = new FormData();
+    data.append("message",$('input').val())
+    console.log(window.location.href+"/webhook/web")
     $.ajax({
       headers: { "X-CSRFToken": '{{csrf_token}}' },
-      url: "{% url 'web-bot' %}",
+      url: window.location.href+"webhook/web",
       type: "POST",
       data:data,
       contentType: false,
       processData: false,
       success: function (response) {
-        respuesta(response["mensaje"]);
+        console.log(response)
+        respuesta(response["dialog"]);
       },
     })
   });
