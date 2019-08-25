@@ -660,6 +660,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
   <script src="{% static 'js/main.js' %}"></script>
   <script>
     function respuesta(arg){
+      var message = $('.message').first().clone();
       event.preventDefault();
       message.find('p').text(arg);  //($('input').val()
       message.prependTo('.chat-container');

@@ -15,7 +15,8 @@ $(function () {
       contentType: false,
       processData: false,
       success: function (response) {
-        respuesta(response["mensaje"]);
+        console.log(response)
+        respuesta(response["dialog"]);
       },
     })
   });

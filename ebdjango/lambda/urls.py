@@ -3,11 +3,6 @@ from . import views
 
 urlpatterns = [
     path(
-        '',
-        view= views.Messenger.as_view(),
-        name='messenger',
-    ),
-    path(
         '/dialog',
         view= views.Dialog.as_view(),
         name='dialog',
