@@ -1,0 +1,57 @@
+*
+  box-sizing border-box
+
+  @import url("https://fonts.googleapis.com/css?family=Oswald:400,500,600");@import url("https://fonts.googleapis.com/css?family=Roboto:400,500");
+  
+.chat{
+  width:400px; 
+  margin: 0 auto;
+  border: solid 1px #ccc;
+  border-radius :5px;
+  overflow :hidden;
+}
+.chat-container{
+  height :400px;
+  overflow: auto;
+  transform :rotate(180deg);
+  direction :rtl;
+}
+.message{
+    padding :20px;
+    transform :rotate(180deg);
+    direction :ltr;
+}
+    .avatar{
+      float :left;
+      margin-right: 5px;
+    }
+    .datetime{
+      float :right;
+      color :#999;
+    }
+.send-message-form input{
+    width: 89%;
+    border :none;
+    font-size :16px;
+    padding :10px;
+    display: inline-block;
+}
+.send-message-form button{
+    display: inline-block;
+    background-color: white;
+    font-family:"Roboto";
+    font-size: 16px;
+    font-weight: 300;
+    width: 10%;
+    height: 48px;
+}
+
+#Enviar {
+  font-family:"Roboto";
+}
+
+.message>p {
+  color: white;
+  font-size: 20px;
+  font-family: "Roboto";
+}
