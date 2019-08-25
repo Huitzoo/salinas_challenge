@@ -1,5 +1,7 @@
 *
   box-sizing border-box
+
+  @import url("https://fonts.googleapis.com/css?family=Oswald:400,500,600");@import url("https://fonts.googleapis.com/css?family=Roboto:400,500");
   
 .chat{
   width:400px; 
@@ -28,10 +30,28 @@
       color :#999;
     }
 .send-message-form input{
-    width :100%;
+    width: 89%;
     border :none;
     font-size :16px;
-    padding :10px;}
+    padding :10px;
+    display: inline-block;
+}
 .send-message-form button{
-    display :none;
+    display: inline-block;
+    background-color: white;
+    font-family:"Roboto";
+    font-size: 16px;
+    font-weight: 300;
+    width: 10%;
+    height: 48px;
+}
+
+#Enviar {
+  font-family:"Roboto";
+}
+
+.message>p {
+  color: white;
+  font-size: 20px;
+  font-family: "Roboto";
 }

@@ -1,19 +1,21 @@
-<!DOCTYPE html>
+{% load static %}
+{% load staticfiles %}
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Aroma Shop - Home</title>
-	<link rel="icon" href="img/Fevicon.png" type="image/png" >
-  <link rel="stylesheet" href="vendors/bootstrap/bootstrap.min.css">
-  <link rel="stylesheet" href="vendors/fontawesome/css/all.min.css">
-	<link rel="stylesheet" href="vendors/themify-icons/themify-icons.css">
-  <link rel="stylesheet" href="vendors/nice-select/nice-select.css">
-  <link rel="stylesheet" href="vendors/owl-carousel/owl.theme.default.min.css">
-  <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/chat.css">
+
+	<link rel="icon" href="{% static 'img/Fevicon.png' %}" type="image/png" >
+  <link rel="stylesheet" href="{% static 'vendors/bootstrap/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'vendors/fontawesome/css/all.min.css' %}">
+	<link rel="stylesheet" href="{% static 'vendors/themify-icons/themify-icons.css' %}">
+  <link rel="stylesheet" href="{% static 'vendors/nice-select/nice-select.css' %}">
+  <link rel="stylesheet" href="{% static 'vendors/owl-carousel/owl.theme.default.min.css' %}">
+  <link rel="stylesheet" href="{% static 'vendors/owl-carousel/owl.carousel.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'css/chat.css' %}">
 </head>
 <body>
   <!--================ Start Header Menu Area =================-->
@@ -21,7 +23,7 @@
     <div class="main_menu">
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
-          <a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt="" height="110" width="110"></a>
+          <a class="navbar-brand logo_h" href="index.html"><img src="{% static 'img/logo.png'  %}" alt="" height="110" width="110"></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="icon-bar"></span>
@@ -82,13 +84,13 @@
         <div class="row no-gutters align-items-center pt-60px">
           <div class="col-5 d-none d-sm-block">
             <div class="hero-banner__img">
-              <img class="img-fluid" src="img/home/moto.png" alt="">
+              <img class="img-fluid" src="{% static 'img/home/moto.png'  %}" alt="">
             </div>
           </div>
           <div class="col-sm-7 col-lg-6 offset-lg-1 pl-4 pl-md-5 pl-lg-0">
             <div class="hero-banner__content">
               <h1>ITALIKA</h1>
-              <img src="img/home/slogan.png" alt="Puedes hacer más">
+              <img src="{% static 'img/home/slogan.png'  %}" alt="Puedes hacer más">
               <h3>Conoce y no pierdas cada instante de nuestras aventuras<span><a href="#chatbot">Conoce tu moto ideal</a></span></h3>
             </div>
           </div>
@@ -101,19 +103,19 @@
     <section class="section-margin mt-0">
       <div class="owl-carousel owl-theme hero-carousel">
         <div class="hero-carousel__slide">
-          <img src="img/home/modelos.png" alt="" class="img-fluid" height="200" width="200">
+          <img src="{% static 'img/home/modelos.png'  %}" alt="" class="img-fluid" height="200" width="200">
           <a href="#" class="hero-carousel__slideOverlay">
             <h3>Modelos</h3>
           </a>
         </div>
         <div class="hero-carousel__slide">
-          <img src="img/home/refacciones.png" alt="" class="img-fluid" height="200" width="200">
+          <img src="{% static 'img/home/refacciones.png'  %}" alt="" class="img-fluid" height="200" width="200">
           <a href="#" class="hero-carousel__slideOverlay">
             <h3>Refacciones</h3>
             </a>
         </div>
         <div class="hero-carousel__slide">
-          <img src="img/home/distribuidores.png" alt="" class="img-fluid" height="200" width="200">
+          <img src="{% static 'img/home/distribuidores.png'  %}" alt="" class="img-fluid" height="200" width="200">
           <a href="#" class="hero-carousel__slideOverlay">
             <h3>Distribuidores</h3>
           </a>
@@ -132,7 +134,7 @@
           <div class="col-md-6 col-lg-4 col-xl-3">
             <div class="card text-center card-product">
               <div class="card-product__img">
-                <img class="card-img" src="img/product/modelo1.png" alt="" height="240" width="50">
+                <img class="card-img" src="{% static 'img/product/modelo1.png'  %}" alt="" height="240" width="50">
                 <ul class="card-product__imgOverlay">
                   <li><button><i class="ti-search"></i></button></li>
                   <li><button><i class="ti-shopping-cart"></i></button></li>
@@ -149,7 +151,7 @@
           <div class="col-md-6 col-lg-4 col-xl-3">
             <div class="card text-center card-product">
               <div class="card-product__img">
-                <img class="card-img" src="img/product/modelo2.png" alt="">
+                <img class="card-img" src="{% static 'img/product/modelo2.png'  %}" alt="">
                 <ul class="card-product__imgOverlay">
                   <li><button><i class="ti-search"></i></button></li>
                   <li><button><i class="ti-shopping-cart"></i></button></li>
@@ -166,7 +168,7 @@
           <div class="col-md-6 col-lg-4 col-xl-3">
             <div class="card text-center card-product">
               <div class="card-product__img">
-                <img class="card-img" src="img/product/modelo3.png" alt="">
+                <img class="card-img" src="{% static 'img/product/modelo3.png'  %}" alt="">
                 <ul class="card-product__imgOverlay">
                   <li><button><i class="ti-search"></i></button></li>
                   <li><button><i class="ti-shopping-cart"></i></button></li>
@@ -183,7 +185,7 @@
           <div class="col-md-6 col-lg-4 col-xl-3">
             <div class="card text-center card-product">
               <div class="card-product__img">
-                <img class="card-img" src="img/product/modelo4.png" alt="">
+                <img class="card-img" src="{% static 'img/product/modelo4.png'  %}" alt="">
                 <ul class="card-product__imgOverlay">
                   <li><button><i class="ti-search"></i></button></li>
                   <li><button><i class="ti-shopping-cart"></i></button></li>
@@ -200,7 +202,7 @@
           <div class="col-md-6 col-lg-4 col-xl-3">
             <div class="card text-center card-product">
               <div class="card-product__img">
-                <img class="card-img" src="img/product/modelo5.png" alt="">
+                <img class="card-img" src="{% static 'img/product/modelo5.png'  %}" alt="">
                 <ul class="card-product__imgOverlay">
                   <li><button><i class="ti-search"></i></button></li>
                   <li><button><i class="ti-shopping-cart"></i></button></li>
@@ -217,7 +219,7 @@
           <div class="col-md-6 col-lg-4 col-xl-3">
             <div class="card text-center card-product">
               <div class="card-product__img">
-                <img class="card-img" src="img/product/modelo6.png" alt="">
+                <img class="card-img" src="{% static 'img/product/modelo6.png'  %}" alt="">
                 <ul class="card-product__imgOverlay">
                   <li><button><i class="ti-search"></i></button></li>
                   <li><button><i class="ti-shopping-cart"></i></button></li>
@@ -234,7 +236,7 @@
           <div class="col-md-6 col-lg-4 col-xl-3">
             <div class="card text-center card-product">
               <div class="card-product__img">
-                <img class="card-img" src="img/product/modelo7.png" alt="">
+                <img class="card-img" src="{% static 'img/product/modelo7.png'  %}" alt="">
                 <ul class="card-product__imgOverlay">
                   <li><button><i class="ti-search"></i></button></li>
                   <li><button><i class="ti-shopping-cart"></i></button></li>
@@ -251,7 +253,7 @@
           <div class="col-md-6 col-lg-4 col-xl-3">
             <div class="card text-center card-product">
               <div class="card-product__img">
-                <img class="card-img" src="img/product/modelo8.png" alt="">
+                <img class="card-img" src="{% static 'img/product/modelo8.png'  %}" alt="">
                 <ul class="card-product__imgOverlay">
                   <li><button><i class="ti-search"></i></button></li>
                   <li><button><i class="ti-shopping-cart"></i></button></li>
@@ -274,7 +276,7 @@
     <section class="images">
       <div class="container">
         <div class="row">
-            <img src="img/bbva.png" alt="">
+            <img src="{% static 'img/bbva.png'  %}" alt="">
             </div>
           </div>
         </div>
@@ -292,7 +294,7 @@
         <div class="owl-carousel owl-theme" id="bestSellerCarousel">
           <div class="card text-center card-product">
             <div class="card-product__img">
-              <img class="img-fluid" src="img/product/modelo2.png" alt="">
+              <img class="img-fluid" src="{% static 'img/product/modelo2.png'  %}" alt="">
               <ul class="card-product__imgOverlay">
                 <li><button><i class="ti-search"></i></button></li>
                 <li><button><i class="ti-shopping-cart"></i></button></li>
@@ -308,7 +310,7 @@
 
           <div class="card text-center card-product">
             <div class="card-product__img">
-              <img class="img-fluid" src="img/product/modelo4.png" alt="">
+              <img class="img-fluid" src="{% static 'img/product/modelo4.png'  %}" alt="">
               <ul class="card-product__imgOverlay">
                 <li><button><i class="ti-search"></i></button></li>
                 <li><button><i class="ti-shopping-cart"></i></button></li>
@@ -324,7 +326,7 @@
 
           <div class="card text-center card-product">
             <div class="card-product__img">
-              <img class="img-fluid" src="img/product/modelo6.png" alt="">
+              <img class="img-fluid" src="{% static 'img/product/modelo6.png'  %}" alt="">
               <ul class="card-product__imgOverlay">
                 <li><button><i class="ti-search"></i></button></li>
                 <li><button><i class="ti-shopping-cart"></i></button></li>
@@ -340,7 +342,7 @@
 
           <div class="card text-center card-product">
             <div class="card-product__img">
-              <img class="img-fluid" src="img/product/modelo7.png" alt="">
+              <img class="img-fluid" src="{% static 'img/product/modelo7.png'  %}" alt="">
               <ul class="card-product__imgOverlay">
                 <li><button><i class="ti-search"></i></button></li>
                 <li><button><i class="ti-shopping-cart"></i></button></li>
@@ -356,7 +358,7 @@
 
           <div class="card text-center card-product">
             <div class="card-product__img">
-              <img class="img-fluid" src="img/product/product1.png" alt="">
+              <img class="img-fluid" src="{% static 'img/product/product1.png'  %}" alt="">
               <ul class="card-product__imgOverlay">
                 <li><button><i class="ti-search"></i></button></li>
                 <li><button><i class="ti-shopping-cart"></i></button></li>
@@ -372,7 +374,7 @@
 
           <div class="card text-center card-product">
             <div class="card-product__img">
-              <img class="img-fluid" src="img/product/product2.png" alt="">
+              <img class="img-fluid" src="{% static 'img/product/product2.png'  %}" alt="">
               <ul class="card-product__imgOverlay">
                 <li><button><i class="ti-search"></i></button></li>
                 <li><button><i class="ti-shopping-cart"></i></button></li>
@@ -388,7 +390,7 @@
 
           <div class="card text-center card-product">
             <div class="card-product__img">
-              <img class="img-fluid" src="img/product/product3.png" alt="">
+              <img class="img-fluid" src="{% static 'img/product/product3.png'  %}" alt="">
               <ul class="card-product__imgOverlay">
                 <li><button><i class="ti-search"></i></button></li>
                 <li><button><i class="ti-shopping-cart"></i></button></li>
@@ -404,7 +406,7 @@
 
           <div class="card text-center card-product">
             <div class="card-product__img">
-              <img class="img-fluid" src="img/product/product4.png" alt="">
+              <img class="img-fluid" src="{% static 'img/product/product4.png'  %}" alt="">
               <ul class="card-product__imgOverlay">
                 <li><button><i class="ti-search"></i></button></li>
                 <li><button><i class="ti-shopping-cart"></i></button></li>
@@ -434,7 +436,7 @@
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
             <div class="card card-blog">
               <div class="card-blog__img">
-                <img class="card-img rounded-0" src="img\Anuncios\Anuncio1.jpg" alt="">
+                <img class="card-img rounded-0" src="{% static 'img/Anuncios/Anuncio1.jpg' %}" alt="">
               </div>
               <div class="card-body">
                 <ul class="card-blog__info">
@@ -451,7 +453,7 @@
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
             <div class="card card-blog">
               <div class="card-blog__img">
-                <img class="card-img rounded-0" src="img\Anuncios\Anuncio2.jpg" alt="">
+                <img class="card-img rounded-0" src="{% static 'img/Anuncios/Anuncio2.jpg' %}" alt="">
               </div>
               <div class="card-body">
                 <ul class="card-blog__info">
@@ -468,7 +470,7 @@
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
             <div class="card card-blog">
               <div class="card-blog__img">
-                <img class="card-img rounded-0" src="img\Anuncios\Anuncio3.jpg" alt="">
+                <img class="card-img rounded-0" src="{% static 'img/Anuncios/Anuncio3.jpg' %}" alt="">
               </div>
               <div class="card-body">
                 <ul class="card-blog__info">
@@ -491,21 +493,13 @@
                 <div class="chat-container">
                   <div class="message">
                     <img class="avatar" src="https://placeimg.com/50/50/people?1">
-                    <p>A message text</p>
-                  </div>
-                  <div class="message">
-                    <img class="avatar" src="https://placeimg.com/50/50/people?1">
-                    <p>A message text</p>
-                  </div>
-                  <div class="message">
-                    <img class="avatar" src="https://placeimg.com/50/50/people?2">
-                    <p>A message text</p>
+                    <p>¿Necesitas una moto?, manda un mensaje y con gusto te atenderé. :D</p>
                   </div>
                 </div>
-                <div class="send-message-form">
-                  <input type="text" placeholder="Your message">
-                  <button id="enviar" type="submit">Enviar</button>
-                </div>
+              <div class="send-message-form">
+                <input type="text" placeholder="Your message">
+                <button id="enviar" type="submit">Enviar</button>
+              </div>
         </div>
       </div>
     </section>
@@ -547,12 +541,12 @@
 						<div class="single-footer-widget instafeed">
 							<h4 class="footer_title">Gallery</h4>
 							<ul class="list instafeed d-flex flex-wrap">
-								<li><img src="img/gallery/r1.jpg" alt=""></li>
-								<li><img src="img/gallery/r2.jpg" alt=""></li>
-								<li><img src="img/gallery/r3.jpg" alt=""></li>
-								<li><img src="img/gallery/r5.jpg" alt=""></li>
-								<li><img src="img/gallery/r7.jpg" alt=""></li>
-								<li><img src="img/gallery/r8.jpg" alt=""></li>
+								<li><img src="{% static 'img/gallery/r1.jpg' %}" alt=""></li>
+								<li><img src="{% static 'img/gallery/r2.jpg' %}" alt=""></li>
+								<li><img src="{% static 'img/gallery/r3.jpg' %}" alt=""></li>
+								<li><img src="{% static 'img/gallery/r5.jpg' %}" alt=""></li>
+								<li><img src="{% static 'img/gallery/r7.jpg' %}" alt=""></li>
+								<li><img src="{% static 'img/gallery/r8.jpg' %}" alt=""></li>
 							</ul>
 						</div>
 					</div>
@@ -605,13 +599,21 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
 
 
-  <script src="vendors/jquery/jquery-3.2.1.min.js"></script>
-  <script src="vendors/bootstrap/bootstrap.bundle.min.js"></script>
-  <script src="vendors/skrollr.min.js"></script>
-  <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-  <script src="vendors/nice-select/jquery.nice-select.min.js"></script>
-  <script src="vendors/jquery.ajaxchimp.min.js"></script>
-  <script src="vendors/mail-script.js"></script>
-  <script src="js/main.js"></script>
+  <script src="{% static 'vendors/jquery/jquery-3.2.1.min.js' %}"></script>
+  <script src="{% static 'vendors/bootstrap/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'vendors/skrollr.min.js' %}"></script>
+  <script src="{% static 'vendors/owl-carousel/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'vendors/nice-select/jquery.nice-select.min.js' %}"></script>
+  <script src="{% static 'vendors/jquery.ajaxchimp.min.js' %}"></script>
+  <script src="{% static 'vendors/mail-script.js' %}"></script>
+  <script src="{% static 'js/main.js' %}"></script>
+  <script>
+    function respuesta(arg){
+      var message = $('.message').first().clone();
+      event.preventDefault();
+      message.find('p').text(arg);  //($('input').val()
+      message.prependTo('.chat-container');
+    }
+  </script>
 </body>
 </html>
