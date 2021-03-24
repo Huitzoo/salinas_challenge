@@ -45,7 +45,7 @@ python-dateutil==2.8.0
 pytz==2019.2
 PyYAML==3.13
 requests==2.20.1
-rsa==4.0
+rsa==4.1
 s3io==0.1.1
 semantic-version==2.5.0
 six==1.11.0
