@@ -43,7 +43,7 @@ pyTelegramBotAPI==3.6.6
 pytest==5.1.1
 python-dateutil==2.8.0
 pytz==2019.2
-PyYAML==3.13
+PyYAML==5.4
 requests==2.20.1
 rsa==4.0
 s3io==0.1.1
